@@ -1,0 +1,3 @@
+docker pull busybox
+docker tag busybox gcr.io/my-project/busybox
+docker push gcr.io/my-project/busybox
