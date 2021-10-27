@@ -1,0 +1,2 @@
+# resize the cluster node
+gcloud container clusters resize rahul-test-gcp-cluster1 --zone us-central1-c --node-pool node-pool --size 2
