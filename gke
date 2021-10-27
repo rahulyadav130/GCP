@@ -4,3 +4,7 @@ gcloud container clusters resize rahul-test-gcp-cluster1 --zone us-central1-c --
 docker tag rahulgcptestpyimg gcr.io/rax-rahul-yadav/rahulgcptestpyimg:v1
 docker push gcr.io/rax-rahul-yadav/rahulgcptestpyimg:v1
 kubectl scale deployment rahultestpyapp --replicas 2
+#create role 
+kubectl create role pod-reader --verb=get --verb=list --verb=watch --resource=pods --namespace=ns1
+
+kubectl create rolebinding account-pod-reader-binding --role=pod-reader --user=account1 --namespace=ns-1
