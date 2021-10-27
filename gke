@@ -1,2 +1,5 @@
 # resize the cluster node
 gcloud container clusters resize rahul-test-gcp-cluster1 --zone us-central1-c --node-pool node-pool --size 2
+
+docker tag rahulgcptestpyimg gcr.io/rax-rahul-yadav/rahulgcptestpyimg:v1
+docker push gcr.io/rax-rahul-yadav/rahulgcptestpyimg:v1
